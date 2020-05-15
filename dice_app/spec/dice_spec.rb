@@ -9,8 +9,12 @@ describe Dice do
     expect(Dice.new).to respond_to(:roll)
   end
 
-  it 'Should return a number between 1 and 6' do
-    expect(Dice.new.roll).to be_between(1, 6)
+  # it 'Should return a number between 1 and 6' do
+  #   expect(Dice.new.roll).to be_between(1, 6)
+  # end
+
+  it 'Should take and argument to show many dice are being rolled' do
+    expect(Dice.new.roll(4)).to eq(4)
   end
 
 end

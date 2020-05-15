@@ -1,7 +1,9 @@
 class Dice
 
-  def roll
-    rand(1..6)
+  def roll(num)
+    num.times do
+      rand(1..6)
+    end
   end
 
 end
