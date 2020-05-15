@@ -22,4 +22,9 @@ describe Dice do
   end
 
 
+  it 'Should give the user a score when asked' do
+    subject.roll(4)
+    expect(subject.score).to be_between(4, 24)
+  end
+
 end
